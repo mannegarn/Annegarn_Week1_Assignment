@@ -4,7 +4,7 @@ console.log("Hello World!");
 /* This is written in a very rudimentary way: only useful for doing this one speific thing that is changing these
 specific images in the background */
 
-const function_run = 0;
+let function_run = 0;
 
 // Function to change the background image of the section with id "homepage"
 function changeImage() {
@@ -13,8 +13,9 @@ function changeImage() {
 
   // Add a popup alert to confirm that the button was clicked and the function was called:
   if (function_run == 0) {
-    alert("Button was clicked!");
-    function_run = 1;
+    alert("There may be some delay, please click again if nothing happened!");
+    function_run += 1;
+    console.log("function run:");
   }
 
   // Check the current image URL to decide which one to toggle
