@@ -1,0 +1,137 @@
+/* Applies a global font to the entire page
+ and removes the default margin and padding.*/
+body {
+  font-family: "Courier New", Courier, monospace;
+  margin: 0px;
+  padding: 0px;
+  width: 100vw;
+}
+
+/* Ensures that the links maintain the desired colour and are underlined. */
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+/* Applies a background shading (transparent colour) to the header and 
+fixes the header to the top of the page when scrolling.
+Uses flex to display the links to the right of the  */
+header {
+  position: fixed;
+  top: 0;
+  background-color: #000000b9;
+  color: white;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  font-size: larger;
+  padding: 0;
+  z-index: 1000;
+}
+
+/* Applies a margin to the header h1 to space it from the links */
+header h1 {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+button {
+  position: fixed;
+  right: 50px;
+  background-color: #6200ea43;
+  color: white;
+  padding: 20px;
+  border-radius: 40px;
+}
+
+button:hover {
+  background-color: #6200ea80;
+}
+
+/* Applies a background shadinf effect when hovering over text */
+.textbox {
+  background-color: #020202a0;
+  width: 100vw;
+  padding: 0px;
+}
+
+.textbox:hover {
+  background-color: #020202d0;
+}
+
+.home {
+  height: 100vh;
+  background-image: url("./Sun_pics/sun.jpg");
+  background-blend-mode: overlay;
+  background-color: #0000001c;
+  background-size: cover;
+  background-position: center;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+}
+
+.home .text {
+  position: relative;
+  color: white;
+  font-size: 2em;
+  text-shadow: 4px 4px 4px #000000;
+  margin-left: 50px;
+}
+
+.about {
+  height: 100vh;
+  background-image: url("./Mercury_pics/mercury.jpg");
+  background-size: contain;
+  background-position: center;
+  background-blend-mode: overlay;
+  background-color: #0000004d;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+}
+
+.about .text {
+  position: relative;
+  bottom: 50px;
+  left: 0px;
+  color: rgb(241, 93, 201);
+  font-size: 2em;
+  background-color: #ffffff00;
+  padding: 50px;
+}
+
+.contacts {
+  height: 100vh;
+  background-image: url("./Venus_pics/venus.jpg");
+  background-size: contain;
+  background-position: top center;
+  background-blend-mode: overlay;
+  background-color: #0000004d;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  top: 200vh;
+}
+
+.contacts .text {
+  position: relative;
+  bottom: 50px;
+  left: 0px;
+  color: rgb(47, 141, 12);
+  font-size: 2em;
+  background-color: #ffffff00;
+  padding: 50px;
+}
+
+/*////////////////////////////*/
+
+/* Just shows borders for educational purposes */
+* {
+  border: 0px solid red;
+}
